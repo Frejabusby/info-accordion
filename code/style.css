@@ -2,3 +2,59 @@ html {
   background: #f2f1f4;
   color: #19171c;
 }
+
+h1, h2 {
+ font-family: sans-serif;
+}
+
+.title > h2 {
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+}
+
+.title img {
+  margin-left: 10px;
+}
+
+.title:hover {
+  cursor: s-resize;
+}
+
+.description {
+  overflow: hidden;
+  background-color: #eaeaea;
+  border: 1px solid #d2d2d2;
+  height: 0px;
+  transition: height 2s ease;
+}
+
+.description p {
+  margin: 20px 10px 10px 40px;
+}
+
+.description:hover {
+  cursor: n-resize;
+}
+
+.active > .description {
+  display: block;
+  transition: height 2s ease;
+  height: 100px;
+}
+
+.title:nth-child(odd) {
+  background: #d2d2d2;
+}
+
+.title:nth-child(odd):hover {
+  background-color: #c5c5c5;
+}
+
+.title:nth-child(even) {
+  background: #b7b7b7;
+}
+
+.title:nth-child(even):hover {
+  background-color: #a2a2a2;
+}
